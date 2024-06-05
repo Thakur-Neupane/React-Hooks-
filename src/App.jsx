@@ -1,26 +1,19 @@
-import { useState } from "react";
 import "./App.css";
+import UseEffect from "./components/UseEffect";
+import UseMemo from "./components/UseMemo";
+import UseRef from "./components/UseRef";
+import UseState from "./components/UseState";
 
 function App() {
-  const [car, setCar] = useState({
-    brand: "Ferrari",
-    model: "Roma",
-    year: "2024",
-    color: "red",
-  });
-  const changeColor = () => {
-    setCar(() => {
-      return { ...car, color: "blue" };
-    });
-  };
   return (
     <div>
-      <h1>My {car.brand}</h1>
-      <h2>
-        It is a beautiful {car.model} made in year{car.year} with color{" "}
-        {car.color}
-        <button onClick={changeColor}>Change color</button>
-      </h2>
+      <UseState />
+      <hr />
+      <UseEffect />
+      <hr />
+      <UseRef />
+      <hr />
+      <UseMemo />
     </div>
   );
 }
