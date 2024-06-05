@@ -1,4 +1,5 @@
 import "./App.css";
+import UseContext from "./components/UseContext";
 import UseEffect from "./components/UseEffect";
 import UseMemo from "./components/UseMemo";
 import UseRef from "./components/UseRef";
@@ -14,6 +15,8 @@ function App() {
       <UseRef />
       <hr />
       <UseMemo />
+      <hr />
+      <UseContext />
     </div>
   );
 }
